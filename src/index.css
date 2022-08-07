@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400;600&family=Readex+Pro:wght@200;300;400;500;600&display=swap');
 
-html{
+html, body{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 *{
     font-family: 'Readex Pro', sans-serif;
+}
+
+
+
+.primary-title{
+    font-size: 90px;
+    color: white;
 }
 
 .primary-button{
@@ -23,9 +31,29 @@ html{
    background: linear-gradient(260deg, #fe3072, #ff5948);
 }
 
-body{
-    text-align: center;
+.secondary-button{
+    color: rgb(121, 119, 119);
+    background-color: white;
+    font-weight: 500px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid 2px rgb(121, 119, 119);
+    margin: 6px;
+
 }
+
+.secondary-button:hover{
+    color: rgb(48, 48, 48);
+    border: solid 2px right rgb(45, 45, 45);
+}
+
+h2{
+    font-style: italic;
+}
+
+
 
 /*--------- Navbar ---------*/
 
@@ -33,5 +61,78 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
+nav .nav-button{
+    color: #fe3072;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+nav .nav-button:disabled{
+    background-color: rgb(181,180,180);
+    color: rgb(193,42,98);
+}
+
+.auth-modal .close-icon{
+    float: right; 
+}
+
+nav .logo-container{
+    width: 170px;
+    margin: 15px;
+
+}
+
+nav .logo-container .logo{ 
+    width: 100%;
+    
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.65) 0%,
+        rgba(0,0,0,0) 100%
+    ), url('images/6e9794bcedeecf5a8f8f41338a2a7345.webp');
+}
+
+/*--------- Auth Modal ---------*/
+
+.auth-modal{
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: 0 auto;
+    max-width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 48px;
+}
+
+.home{
+    margin-top: 30vh;
+}
+
+.auth-modal form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-modal input[type=password], .auth-modal input[type=email]{
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}
