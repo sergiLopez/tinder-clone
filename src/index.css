@@ -214,7 +214,54 @@ nav .logo-container .logo{
     background-color: rgb(226,115,155);
 } 
 
-.onboarding form .photo-container{
+.onboarding form .photo-container img{
     width: 100%;
+}
+
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .swipe-container{
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
+
+.swipe {
+    position: absolute;
+  }
+  
+ .dashboard .card-container {
+
+    width: 400px;
+    height: 650px;
+  }
+  
+  .card {
+   
+    width: 400px;
+    height: 650px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    margin-top: 0;
+  }
+
+  .dashboard .swipe-info{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }
