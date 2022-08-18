@@ -16,9 +16,9 @@ const Home = () => {
     }
 
     return (
-
+        
        <div className="overlay">
-       <Nav minimal={false} setShowModal={ setShowModal } showModal={showModal} setIsSignUp={setIsSignUp}/>
+       <Nav minimal={false} setShowModal={ setShowModal } showModal={showModal} setIsSignUp={setIsSignUp} />
         <div className="home">
             <h1 className="primary-title">Swipe Right</h1>
             <button className="primary-button" onClick={handleClick}>
